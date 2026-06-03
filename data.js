@@ -1,264 +1,447 @@
-// Super Smash Bros. Quiz Data
-// Covering Smash 4 (Wii U/3DS) and Ultimate
+// Transit Systems Quiz Data
+// Covering 20+ North American transit agencies
 
 export const quizData = {
-  characters: {
+  'vehicle-models-text': {
     easy: [
-      { question: "What game is Mario from?", answers: ["super mario bros", "mario bros", "super mario", "mario"], category: "characters" },
-      { question: "What game is Link from?", answers: ["the legend of zelda", "legend of zelda", "zelda"], category: "characters" },
-      { question: "What game is Pikachu from?", answers: ["pokemon red", "pokemon blue", "pokemon", "pokemon red and blue"], category: "characters" },
-      { question: "What game is Kirby from?", answers: ["kirby's dream land", "kirbys dream land", "kirby dream land"], category: "characters" },
-      { question: "What game is Donkey Kong from?", answers: ["donkey kong", "donkey kong arcade"], category: "characters" },
-      { question: "What game is Samus from?", answers: ["metroid"], category: "characters" },
-      { question: "What game is Fox from?", answers: ["star fox", "starfox"], category: "characters" },
-      { question: "What game is Yoshi from?", answers: ["super mario world", "mario world"], category: "characters" },
-      { question: "What game is Sonic from?", answers: ["sonic the hedgehog", "sonic"], category: "characters" },
-      { question: "What game is Pac-Man from?", answers: ["pac-man", "pacman"], category: "characters" },
-      { question: "What game is Mega Man from?", answers: ["mega man", "megaman"], category: "characters" },
-      { question: "What game is Bowser from?", answers: ["super mario bros", "mario bros", "super mario"], category: "characters" },
-      { question: "What game is Peach from?", answers: ["super mario bros", "mario bros", "super mario"], category: "characters" },
-      { question: "What game is Zelda from?", answers: ["the legend of zelda", "legend of zelda", "zelda"], category: "characters" },
-      { question: "What game is Inkling from?", answers: ["splatoon"], category: "characters" },
+      // NJ Transit
+      { question: "What manufacturer makes the NJ Transit multi-level EMU cars?", answers: ["bombardier", "bombardier multilevel"], category: "vehicle-models-text", agency: "nj-transit" },
+      { question: "What is the most common bus model in NJ Transit's fleet?", answers: ["nova lfs", "nova bus lfs"], category: "vehicle-models-text", agency: "nj-transit" },
+
+      // MTA NYC
+      { question: "What bus model is most common in NYC's MTA fleet?", answers: ["nova lfs", "nova bus lfs"], category: "vehicle-models-text", agency: "mta-nyc" },
+      { question: "What model are the newest NYC Subway cars delivered in the 2020s?", answers: ["r211"], category: "vehicle-models-text", agency: "mta-nyc" },
+      { question: "What articulated bus model does NYC MTA use?", answers: ["new flyer xd60", "xd60"], category: "vehicle-models-text", agency: "mta-nyc" },
+
+      // TTC
+      { question: "What streetcar model operates on TTC routes?", answers: ["flexity outlook", "bombardier flexity"], category: "vehicle-models-text", agency: "ttc" },
+      { question: "What is TTC's standard subway car model built since 2011?", answers: ["toronto rocket", "tr"], category: "vehicle-models-text", agency: "ttc" },
+
+      // BART
+      { question: "What is BART's newest train car series delivered in 2018?", answers: ["fleet of the future", "fotf"], category: "vehicle-models-text", agency: "bart" },
+
+      // CTA
+      { question: "What is the CTA's standard 'L' train model used on most lines?", answers: ["5000 series"], category: "vehicle-models-text", agency: "cta" },
+
+      // WMATA
+      { question: "What are WMATA's newest Metro cars called?", answers: ["7000 series"], category: "vehicle-models-text", agency: "wmata" },
+
+      // LA Metro
+      { question: "What light rail vehicle model does LA Metro use?", answers: ["siemens p2000", "p2000", "siemens p3010"], category: "vehicle-models-text", agency: "la-metro" },
+
+      // Translink
+      { question: "What train model operates on Vancouver's SkyTrain Expo Line?", answers: ["mark i", "mk i"], category: "vehicle-models-text", agency: "translink" },
     ],
+
     medium: [
-      { question: "What game is Ness from?", answers: ["earthbound", "mother 2"], category: "characters" },
-      { question: "What game is Captain Falcon from?", answers: ["f-zero", "f zero"], category: "characters" },
-      { question: "What game is Marth from?", answers: ["fire emblem shadow dragon and the blade of light", "fire emblem", "shadow dragon and the blade of light"], category: "characters" },
-      { question: "What game is Pit from?", answers: ["kid icarus"], category: "characters" },
-      { question: "What game is Olimar from?", answers: ["pikmin"], category: "characters" },
-      { question: "What game is Villager from?", answers: ["animal crossing"], category: "characters" },
-      { question: "What game is Wii Fit Trainer from?", answers: ["wii fit"], category: "characters" },
-      { question: "What game is Little Mac from?", answers: ["punch-out", "punch out"], category: "characters" },
-      { question: "What game is Shulk from?", answers: ["xenoblade chronicles"], category: "characters" },
-      { question: "What game is Duck Hunt from?", answers: ["duck hunt"], category: "characters" },
-      { question: "What game is Ryu from?", answers: ["street fighter", "street fighter 1"], category: "characters" },
-      { question: "What game is Cloud from?", answers: ["final fantasy vii", "final fantasy 7", "ff7", "ffvii"], category: "characters" },
-      { question: "What game is Bayonetta from?", answers: ["bayonetta"], category: "characters" },
-      { question: "What game is Ridley from?", answers: ["metroid"], category: "characters" },
-      { question: "What game is King K. Rool from?", answers: ["donkey kong country"], category: "characters" },
-      { question: "What game is Isabelle from?", answers: ["animal crossing new leaf", "animal crossing"], category: "characters" },
-      { question: "What game is Incineroar from?", answers: ["pokemon sun and moon", "pokemon sun", "pokemon moon"], category: "characters" },
+      // NJ Transit
+      { question: "What locomotive model does NJ Transit use for diesel operations?", answers: ["alp45dp", "bombardier alp45dp"], category: "vehicle-models-text", agency: "nj-transit" },
+      { question: "What electric locomotive pulls NJ Transit's Northeast Corridor trains?", answers: ["alp46", "bombardier alp46"], category: "vehicle-models-text", agency: "nj-transit" },
+
+      // MTA NYC
+      { question: "What subway car model primarily runs on the A, C, and J lines?", answers: ["r32"], category: "vehicle-models-text", agency: "mta-nyc" },
+      { question: "What subway car model serves the 7 line?", answers: ["r188"], category: "vehicle-models-text", agency: "mta-nyc" },
+
+      // SEPTA
+      { question: "What electric multiple unit model serves SEPTA Regional Rail?", answers: ["silverliner v", "silverliner 5"], category: "vehicle-models-text", agency: "septa" },
+      { question: "What trolley model operates on SEPTA's subway-surface lines?", answers: ["kawasaki lrv ii"], category: "vehicle-models-text", agency: "septa" },
+
+      // Metro-North
+      { question: "What is Metro-North's newest electric multiple unit model?", answers: ["m8", "kawasaki m8"], category: "vehicle-models-text", agency: "metro-north" },
+
+      // LIRR
+      { question: "What is the LIRR's newest electric multiple unit?", answers: ["m9", "kawasaki m9"], category: "vehicle-models-text", agency: "lirr" },
+
+      // Metra
+      { question: "What bi-level coach model does Metra use?", answers: ["highliner"], category: "vehicle-models-text", agency: "metra" },
+
+      // TTC
+      { question: "What vintage subway car model did TTC retire in 2023?", answers: ["t1"], category: "vehicle-models-text", agency: "ttc" },
+
+      // MUNI
+      { question: "What light rail vehicle model runs on MUNI Metro?", answers: ["breda lrv"], category: "vehicle-models-text", agency: "muni" },
+
+      // Edmonton
+      { question: "What light rail vehicle model operates Edmonton's Valley Line?", answers: ["bombardier flexity freedom"], category: "vehicle-models-text", agency: "edmonton" },
     ],
+
     hard: [
-      { question: "What game is Roy from?", answers: ["fire emblem the binding blade", "fire emblem binding blade", "binding blade"], category: "characters" },
-      { question: "What game is Lucas from?", answers: ["mother 3", "earthbound 2"], category: "characters" },
-      { question: "What game is Ike from?", answers: ["fire emblem path of radiance"], category: "characters" },
-      { question: "What game is Robin from?", answers: ["fire emblem awakening"], category: "characters" },
-      { question: "What game is Corrin from?", answers: ["fire emblem fates"], category: "characters" },
-      { question: "What game is Richter from?", answers: ["castlevania rondo of blood"], category: "characters" },
-      { question: "What game is Simon from?", answers: ["castlevania", "castlevania 1"], category: "characters" },
-      { question: "What game is King Dedede from?", answers: ["kirby's dream land", "kirbys dream land"], category: "characters" },
-      { question: "What game is Meta Knight from?", answers: ["kirby's adventure", "kirbys adventure"], category: "characters" },
-      { question: "What game is Palutena from?", answers: ["kid icarus"], category: "characters" },
-      { question: "What game is Dark Pit from?", answers: ["kid icarus uprising"], category: "characters" },
-      { question: "What game is Joker from?", answers: ["persona 5"], category: "characters" },
-      { question: "What game is Hero from?", answers: ["dragon quest xi", "dragon quest 11"], category: "characters" },
-      { question: "What game is Banjo & Kazooie from?", answers: ["banjo-kazooie", "banjo kazooie"], category: "characters" },
-      { question: "What game is Terry from?", answers: ["fatal fury", "fatal fury king of fighters"], category: "characters" },
-      { question: "What game is Byleth from?", answers: ["fire emblem three houses"], category: "characters" },
-      { question: "What game is Min Min from?", answers: ["arms"], category: "characters" },
-      { question: "What game is Steve from?", answers: ["minecraft"], category: "characters" },
-      { question: "What game is Sephiroth from?", answers: ["final fantasy vii", "final fantasy 7", "ff7", "ffvii"], category: "characters" },
-      { question: "What game is Pyra from?", answers: ["xenoblade chronicles 2"], category: "characters" },
+      // Amtrak
+      { question: "What is Amtrak's high-speed trainset model on the Northeast Corridor?", answers: ["acela express", "acela"], category: "vehicle-models-text", agency: "amtrak" },
+      { question: "What is Amtrak's newest Acela replacement trainset called?", answers: ["avelia liberty", "acela 21"], category: "vehicle-models-text", agency: "amtrak" },
+
+      // NJ Transit
+      { question: "What double-decker coach model did NJ Transit use before the Bombardier MultiLevel?", answers: ["comet v"], category: "vehicle-models-text", agency: "nj-transit" },
+
+      // MTA NYC
+      { question: "What was the first stainless steel subway car model?", answers: ["r32"], category: "vehicle-models-text", agency: "mta-nyc" },
+      { question: "What vintage subway car model was known as the 'Redbird'?", answers: ["r33", "r36"], category: "vehicle-models-text", agency: "mta-nyc" },
+
+      // BART
+      { question: "What was BART's original train car model from 1972?", answers: ["legacy fleet", "rohr legacy"], category: "vehicle-models-text", agency: "bart" },
+
+      // CTA
+      { question: "What vintage 'L' car was nicknamed the '2400 series'?", answers: ["2400 series"], category: "vehicle-models-text", agency: "cta" },
+
+      // WMATA
+      { question: "What was WMATA's troubled train car series that had brake issues?", answers: ["7000 series"], category: "vehicle-models-text", agency: "wmata" },
+
+      // Tri-Rail
+      { question: "What bi-level coach model does Tri-Rail operate?", answers: ["bombardier bilevel"], category: "vehicle-models-text", agency: "tri-rail" },
+
+      // MTA Maryland
+      { question: "What diesel multiple unit model does MARC use on the Brunswick Line?", answers: ["bombardier multilevel"], category: "vehicle-models-text", agency: "mta-maryland" },
     ]
   },
-  stages: {
+
+  'vehicle-models-images': {
     easy: [
-      { question: "What series is Battlefield from?", answers: ["super smash bros", "smash bros", "smash"], category: "stages" },
-      { question: "What series is Final Destination from?", answers: ["super smash bros", "smash bros", "smash"], category: "stages" },
-      { question: "What game is Peach's Castle from?", answers: ["super mario 64", "mario 64"], category: "stages" },
-      { question: "What game is Hyrule Castle from?", answers: ["the legend of zelda ocarina of time", "ocarina of time", "zelda ocarina of time"], category: "stages" },
-      { question: "What game is Kongo Jungle from?", answers: ["donkey kong country", "donkey kong 64"], category: "stages" },
-      { question: "What series is Pokemon Stadium from?", answers: ["pokemon"], category: "stages" },
-      { question: "What game is Mushroom Kingdom from?", answers: ["super mario bros", "mario bros"], category: "stages" },
-      { question: "What game is Green Hill Zone from?", answers: ["sonic the hedgehog", "sonic"], category: "stages" },
-      { question: "What game is Delfino Plaza from?", answers: ["super mario sunshine", "mario sunshine"], category: "stages" },
-      { question: "What series is Yoshi's Island from?", answers: ["yoshi", "super mario"], category: "stages" },
-      { question: "What game is Moray Towers from?", answers: ["splatoon", "splatoon 2"], category: "stages" },
-      { question: "What game is New Donk City Hall from?", answers: ["super mario odyssey", "mario odyssey"], category: "stages" },
+      { question: "What NYC Subway car model is this?", image: "/images/vehicles/mta-nyc/r160.jpg", answers: ["r160"], category: "vehicle-models-images", agency: "mta-nyc" },
+      { question: "What streetcar model is this?", image: "/images/vehicles/ttc/flexity-outlook.jpg", answers: ["flexity outlook", "bombardier flexity"], category: "vehicle-models-images", agency: "ttc" },
+      { question: "What BART train car is this?", image: "/images/vehicles/bart/fleet-of-the-future.jpg", answers: ["fleet of the future", "fotf"], category: "vehicle-models-images", agency: "bart" },
+      { question: "What CTA 'L' car model is this?", image: "/images/vehicles/cta/5000-series.png", answers: ["5000 series"], category: "vehicle-models-images", agency: "cta" },
+      { question: "What WMATA Metro car is this?", image: "/images/vehicles/wmata/7000-series.jpg", answers: ["7000 series"], category: "vehicle-models-images", agency: "wmata" },
     ],
+
     medium: [
-      { question: "What game is Onett from?", answers: ["earthbound", "mother 2"], category: "stages" },
-      { question: "What game is Mute City from?", answers: ["f-zero"], category: "stages" },
-      { question: "What game is Corneria from?", answers: ["star fox", "starfox"], category: "stages" },
-      { question: "What game is Brinstar from?", answers: ["metroid", "super metroid"], category: "stages" },
-      { question: "What game is Fountain of Dreams from?", answers: ["kirby's adventure", "kirbys adventure"], category: "stages" },
-      { question: "What game is Skyworld from?", answers: ["kid icarus"], category: "stages" },
-      { question: "What game is WarioWare, Inc. from?", answers: ["warioware inc", "warioware"], category: "stages" },
-      { question: "What game is Norfair from?", answers: ["metroid"], category: "stages" },
-      { question: "What game is Frigate Orpheon from?", answers: ["metroid prime"], category: "stages" },
-      { question: "What game is Castle Siege from?", answers: ["fire emblem"], category: "stages" },
-      { question: "What game is Distant Planet from?", answers: ["pikmin"], category: "stages" },
-      { question: "What game is Skyloft from?", answers: ["the legend of zelda skyward sword", "skyward sword"], category: "stages" },
-      { question: "What game is Wii Fit Studio from?", answers: ["wii fit"], category: "stages" },
-      { question: "What game is Boxing Ring from?", answers: ["punch-out", "punch out"], category: "stages" },
-      { question: "What game is Gaur Plain from?", answers: ["xenoblade chronicles"], category: "stages" },
+      { question: "What TTC subway car is this?", image: "/images/vehicles/ttc/toronto-rocket.jpg", answers: ["toronto rocket", "tr"], category: "vehicle-models-images", agency: "ttc" },
+      { question: "What NJ Transit commuter rail coach is this?", image: "/images/vehicles/nj-transit/bombardier-multilevel.jpg", answers: ["bombardier multilevel", "multilevel"], category: "vehicle-models-images", agency: "nj-transit" },
+      { question: "What NYC Subway car model is this?", image: "/images/vehicles/mta-nyc/r211.jpg", answers: ["r211"], category: "vehicle-models-images", agency: "mta-nyc" },
+      { question: "What NJ Transit electric locomotive is this?", image: "/images/vehicles/nj-transit/alp46.jpg", answers: ["alp46", "bombardier alp46"], category: "vehicle-models-images", agency: "nj-transit" },
+      { question: "What vintage CTA 'L' car is this?", image: "/images/vehicles/cta/2400-series.jpg", answers: ["2400 series"], category: "vehicle-models-images", agency: "cta" },
     ],
+
     hard: [
-      { question: "What game is Suzaku Castle from?", answers: ["street fighter ii", "street fighter 2"], category: "stages" },
-      { question: "What game is Midgar from?", answers: ["final fantasy vii", "final fantasy 7", "ff7"], category: "stages" },
-      { question: "What game is Umbra Clock Tower from?", answers: ["bayonetta"], category: "stages" },
-      { question: "What game is Great Plateau Tower from?", answers: ["the legend of zelda breath of the wild", "breath of the wild"], category: "stages" },
-      { question: "What game is New Pork City from?", answers: ["mother 3", "earthbound 2"], category: "stages" },
-      { question: "What game is Summit from?", answers: ["ice climber"], category: "stages" },
-      { question: "What game is Port Town Aero Dive from?", answers: ["f-zero gx"], category: "stages" },
-      { question: "What game is Palutena's Temple from?", answers: ["kid icarus uprising"], category: "stages" },
-      { question: "What game is Dracula's Castle from?", answers: ["castlevania"], category: "stages" },
-      { question: "What game is Mementos from?", answers: ["persona 5"], category: "stages" },
-      { question: "What game is Yggdrasil's Altar from?", answers: ["dragon quest xi", "dragon quest 11"], category: "stages" },
-      { question: "What game is Spiral Mountain from?", answers: ["banjo-kazooie", "banjo kazooie"], category: "stages" },
-      { question: "What game is King of Fighters Stadium from?", answers: ["king of fighters", "fatal fury"], category: "stages" },
-      { question: "What game is Garreg Mach Monastery from?", answers: ["fire emblem three houses"], category: "stages" },
-      { question: "What game is Spring Stadium from?", answers: ["arms"], category: "stages" },
-      { question: "What game is Minecraft World from?", answers: ["minecraft"], category: "stages" },
-      { question: "What game is Northern Cave from?", answers: ["final fantasy vii", "final fantasy 7", "ff7"], category: "stages" },
+      { question: "What NJ Transit dual-mode locomotive is this?", image: "/images/vehicles/nj-transit/alp45dp.jpg", answers: ["alp45dp", "bombardier alp45dp"], category: "vehicle-models-images", agency: "nj-transit" },
+      { question: "What NYC Subway car model serves the 7 line?", image: "/images/vehicles/mta-nyc/r188.jpg", answers: ["r188"], category: "vehicle-models-images", agency: "mta-nyc" },
+      { question: "What BART car is this?", image: "/images/vehicles/bart/legacy-fleet.jpg", answers: ["legacy fleet", "rohr legacy"], category: "vehicle-models-images", agency: "bart" },
+      { question: "What retired TTC subway car model is this?", image: "/images/vehicles/ttc/t1.jpg", answers: ["t1"], category: "vehicle-models-images", agency: "ttc" },
     ]
   },
-  songs: {
+
+  'routes': {
     easy: [
-      { question: "What game is the song 'Main Theme (Super Smash Bros. Ultimate)' from?", answers: ["super smash bros ultimate", "smash ultimate", "ultimate"], category: "songs" },
-      { question: "What game is the song 'Ground Theme (Super Mario Bros.)' from?", answers: ["super mario bros", "mario bros"], category: "songs" },
-      { question: "What game is the song 'Main Theme (The Legend of Zelda)' from?", answers: ["the legend of zelda", "legend of zelda", "zelda"], category: "songs" },
-      { question: "What game is the song 'Pokemon Center' from?", answers: ["pokemon red and blue", "pokemon red", "pokemon blue", "pokemon"], category: "songs" },
-      { question: "What game is the song 'Green Greens' from?", answers: ["kirby's dream land", "kirbys dream land"], category: "songs" },
-      { question: "What game is the song 'Corneria' from?", answers: ["star fox", "starfox"], category: "songs" },
-      { question: "What game is the song 'Brinstar' from?", answers: ["metroid", "super metroid"], category: "songs" },
-      { question: "What game is the song 'Green Hill Zone' from?", answers: ["sonic the hedgehog", "sonic"], category: "songs" },
-      { question: "What game is the song 'Mega Man 2 Medley' from?", answers: ["mega man 2", "megaman 2"], category: "songs" },
-      { question: "What game is the song 'Splattack!' from?", answers: ["splatoon"], category: "songs" },
-      { question: "What game is the song 'Jump Up, Super Star!' from?", answers: ["super mario odyssey", "mario odyssey"], category: "songs" },
+      // NYC Subway - numbered lines
+      { question: "Where does the NYC A train terminate in Manhattan?", answers: ["inwood 207th street", "207th street", "207 street"], category: "routes", agency: "mta-nyc" },
+      { question: "What NYC subway line is known as the 'Broadway Local'?", answers: ["n", "n train"], category: "routes", agency: "mta-nyc" },
+      { question: "What color is the NYC 1 train?", answers: ["red"], category: "routes", agency: "mta-nyc" },
+      { question: "Which NYC subway line serves both JFK and Rockaway Beach?", answers: ["a", "a train"], category: "routes", agency: "mta-nyc" },
+
+      // BART
+      { question: "What color is the BART line to SFO?", answers: ["yellow"], category: "routes", agency: "bart" },
+      { question: "What BART line runs from Richmond to Berryessa?", answers: ["orange line"], category: "routes", agency: "bart" },
+      { question: "Which BART line serves both Oakland and San Francisco airports?", answers: ["yellow line"], category: "routes", agency: "bart" },
+
+      // WMATA
+      { question: "What color is WMATA's line to Dulles Airport?", answers: ["silver"], category: "routes", agency: "wmata" },
+      { question: "What is the oldest WMATA Metro line?", answers: ["red line"], category: "routes", agency: "wmata" },
+      { question: "Which WMATA line runs through Virginia, DC, and Maryland?", answers: ["red line"], category: "routes", agency: "wmata" },
+
+      // CTA
+      { question: "Which CTA line runs to both airports?", answers: ["blue line"], category: "routes", agency: "cta" },
+      { question: "What is the CTA's north-south elevated line called?", answers: ["red line"], category: "routes", agency: "cta" },
+      { question: "What CTA line serves Wrigley Field?", answers: ["red line"], category: "routes", agency: "cta" },
+
+      // TTC
+      { question: "What is Toronto's east-west subway line called?", answers: ["line 2", "bloor-danforth", "bloor danforth"], category: "routes", agency: "ttc" },
+      { question: "What TTC subway line goes to the airport?", answers: ["line 1", "yonge-university"], category: "routes", agency: "ttc" },
+
+      // LA Metro
+      { question: "Which LA Metro line runs from East LA to Santa Monica?", answers: ["e line", "expo line"], category: "routes", agency: "la-metro" },
+      { question: "What is LA Metro's newest rail line to the airport?", answers: ["k line", "crenshaw line"], category: "routes", agency: "la-metro" },
+
+      // SEPTA
+      { question: "What is SEPTA's elevated line called?", answers: ["market-frankford line", "el"], category: "routes", agency: "septa" },
+      { question: "What SEPTA line runs underground along Broad Street?", answers: ["broad street line"], category: "routes", agency: "septa" },
     ],
+
     medium: [
-      { question: "What game is the song 'Onett Theme' from?", answers: ["earthbound", "mother 2"], category: "songs" },
-      { question: "What game is the song 'Mute City' from?", answers: ["f-zero"], category: "songs" },
-      { question: "What game is the song 'Gerudo Valley' from?", answers: ["the legend of zelda ocarina of time", "ocarina of time"], category: "songs" },
-      { question: "What game is the song 'Ashley's Song' from?", answers: ["warioware touched", "warioware"], category: "songs" },
-      { question: "What game is the song 'Gourmet Race' from?", answers: ["kirby super star", "kirby's fun pak"], category: "songs" },
-      { question: "What game is the song 'Title Theme (Animal Crossing)' from?", answers: ["animal crossing"], category: "songs" },
-      { question: "What game is the song 'Snowman' from?", answers: ["earthbound", "mother 2"], category: "songs" },
-      { question: "What game is the song 'DK Rap' from?", answers: ["donkey kong 64"], category: "songs" },
-      { question: "What game is the song 'Fountain of Dreams' from?", answers: ["kirby's adventure", "kirbys adventure"], category: "songs" },
-      { question: "What game is the song 'Jungle Level Ver. 2' from?", answers: ["donkey kong country"], category: "songs" },
-      { question: "What game is the song 'Tal Tal Heights' from?", answers: ["the legend of zelda link's awakening", "links awakening"], category: "songs" },
-      { question: "What game is the song 'Main Theme (Pikmin)' from?", answers: ["pikmin"], category: "songs" },
-      { question: "What game is the song 'Wii Fit Plus Medley' from?", answers: ["wii fit plus", "wii fit"], category: "songs" },
+      // NJ Transit
+      { question: "Which NJ Transit rail line serves Hoboken and Bay Head?", answers: ["north jersey coast line"], category: "routes", agency: "nj-transit" },
+      { question: "What NJ Transit line runs from New York Penn to Trenton?", answers: ["northeast corridor"], category: "routes", agency: "nj-transit" },
+      { question: "Which NJ Transit bus route connects Newark and New York with express service?", answers: ["62", "route 62"], category: "routes", agency: "nj-transit" },
+
+      // NYC MTA
+      { question: "What is the northern terminal of the 1 train?", answers: ["van cortlandt park 242nd street", "242nd street", "van cortlandt"], category: "routes", agency: "mta-nyc" },
+      { question: "Which subway line has a shuttle branch to the Rockaways?", answers: ["s", "rockaway park shuttle"], category: "routes", agency: "mta-nyc" },
+      { question: "What is the longest NYC subway route by distance?", answers: ["a", "a train"], category: "routes", agency: "mta-nyc" },
+
+      // Metro-North
+      { question: "Which Metro-North line runs to New Haven?", answers: ["new haven line"], category: "routes", agency: "metro-north" },
+      { question: "What is Metro-North's westernmost branch?", answers: ["port jervis line"], category: "routes", agency: "metro-north" },
+
+      // LIRR
+      { question: "Which LIRR branch serves the Hamptons?", answers: ["montauk branch"], category: "routes", agency: "lirr" },
+      { question: "What LIRR branch runs to Long Beach?", answers: ["long beach branch"], category: "routes", agency: "lirr" },
+
+      // Metra
+      { question: "Which Metra line serves O'Hare Airport?", answers: ["north central service"], category: "routes", agency: "metra" },
+      { question: "What is Metra's busiest line by ridership?", answers: ["bnsf railway", "bnsf"], category: "routes", agency: "metra" },
+
+      // TTC
+      { question: "What TTC streetcar route runs along Queen Street?", answers: ["501", "501 queen"], category: "routes", agency: "ttc" },
+      { question: "Which TTC line uses the Sheppard Subway?", answers: ["line 4"], category: "routes", agency: "ttc" },
+
+      // BART
+      { question: "Which BART station serves as a transfer between all lines?", answers: ["macarthur"], category: "routes", agency: "bart" },
+
+      // Translink
+      { question: "Which SkyTrain line serves Vancouver Airport?", answers: ["canada line"], category: "routes", agency: "translink" },
+      { question: "What is Vancouver's original SkyTrain line called?", answers: ["expo line"], category: "routes", agency: "translink" },
     ],
+
     hard: [
-      { question: "What game is the song 'Fire Emblem Theme' from?", answers: ["fire emblem shadow dragon and the blade of light", "fire emblem"], category: "songs" },
-      { question: "What game is the song 'Id (Purpose)' from?", answers: ["fire emblem awakening"], category: "songs" },
-      { question: "What game is the song 'You Will Know Our Names' from?", answers: ["xenoblade chronicles"], category: "songs" },
-      { question: "What game is the song 'Vamprie Killer' from?", answers: ["castlevania"], category: "songs" },
-      { question: "What game is the song 'Bloody Tears' from?", answers: ["castlevania ii", "castlevania 2"], category: "songs" },
-      { question: "What game is the song 'Last Surprise' from?", answers: ["persona 5"], category: "songs" },
-      { question: "What game is the song 'Megalovania' from?", answers: ["undertale"], category: "songs" },
-      { question: "What game is the song 'Halland / Dalarna' from?", answers: ["minecraft"], category: "songs" },
-      { question: "What game is the song 'Snake Eater' from?", answers: ["metal gear solid 3", "mgs3"], category: "songs" },
-      { question: "What game is the song 'Ken Stage' from?", answers: ["street fighter ii", "street fighter 2"], category: "songs" },
-      { question: "What game is the song 'Spiral Mountain' from?", answers: ["banjo-kazooie", "banjo kazooie"], category: "songs" },
-      { question: "What game is the song 'Battle! (Lorekeeper Zinnia)' from?", answers: ["pokemon omega ruby and alpha sapphire", "pokemon oras"], category: "songs" },
-      { question: "What game is the song 'Rooftop Run' from?", answers: ["sonic unleashed"], category: "songs" },
-      { question: "What game is the song 'Opening Stage' from?", answers: ["mega man x", "megaman x"], category: "songs" },
-      { question: "What game is the song 'Dark Pit's Theme' from?", answers: ["kid icarus uprising"], category: "songs" },
-      { question: "What game is the song 'Full Steam Ahead' from?", answers: ["splatoon 2"], category: "songs" },
+      // Amtrak
+      { question: "What Amtrak route runs from Chicago to San Francisco?", answers: ["california zephyr"], category: "routes", agency: "amtrak" },
+      { question: "What overnight Amtrak train connects New York and Florida?", answers: ["silver meteor", "silver star"], category: "routes", agency: "amtrak" },
+      { question: "Which Amtrak route is the longest in the US?", answers: ["texas eagle"], category: "routes", agency: "amtrak" },
+
+      // NJ Transit
+      { question: "Which NJ Transit line has a spur to Gladstone?", answers: ["morris and essex line", "morris essex"], category: "routes", agency: "nj-transit" },
+      { question: "What is the westernmost terminus of NJ Transit rail service?", answers: ["phillipsburg"], category: "routes", agency: "nj-transit" },
+
+      // MTA NYC
+      { question: "Which subway line has the most stations?", answers: ["a", "a train"], category: "routes", agency: "mta-nyc" },
+      { question: "What was the original name of the B Division lines?", answers: ["bmt", "brooklyn-manhattan transit"], category: "routes", agency: "mta-nyc" },
+
+      // SEPTA
+      { question: "Which SEPTA Regional Rail line runs to Newark?", answers: ["wilmington/newark line"], category: "routes", agency: "septa" },
+      { question: "What is SEPTA's trolley route that runs to Media?", answers: ["101", "media line"], category: "routes", agency: "septa" },
+
+      // WMATA
+      { question: "Which WMATA line opened most recently?", answers: ["silver line"], category: "routes", agency: "wmata" },
+      { question: "What is the only WMATA line that doesn't share tracks with another line?", answers: ["red line"], category: "routes", agency: "wmata" },
+
+      // Metra
+      { question: "Which Metra line has the longest route distance?", answers: ["union pacific northwest", "up-nw"], category: "routes", agency: "metra" },
+
+      // MUNI
+      { question: "What is MUNI's historic streetcar route that runs along the waterfront?", answers: ["f market", "f line"], category: "routes", agency: "muni" },
     ]
   },
-  'character-images': {
+
+  'rush-hour-routing': {
     easy: [
-      { question: "Who is this character?", image: "/images/characters/mario.png", answers: ["mario"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/link.png", answers: ["link"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/pikachu.png", answers: ["pikachu"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/kirby.png", answers: ["kirby"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/donkey-kong.png", answers: ["donkey kong", "dk"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/samus.png", answers: ["samus", "samus aran"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/fox.png", answers: ["fox", "fox mccloud"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/yoshi.png", answers: ["yoshi"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/sonic.png", answers: ["sonic", "sonic the hedgehog"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/bowser.png", answers: ["bowser"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/peach.png", answers: ["peach", "princess peach"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/zelda.png", answers: ["zelda", "princess zelda"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/luigi.png", answers: ["luigi"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/inkling.png", answers: ["inkling"], category: "character-images" },
+      { question: "Do most commuter rail systems run more frequent service during rush hour?", answers: ["yes"], category: "rush-hour-routing", agency: "general" },
+      { question: "What time of day is considered 'AM rush hour' for most transit systems?", answers: ["7 to 9 am", "7-9", "morning"], category: "rush-hour-routing", agency: "general" },
     ],
+
     medium: [
-      { question: "Who is this character?", image: "/images/characters/ness.png", answers: ["ness"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/captain-falcon.png", answers: ["captain falcon", "falcon"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/marth.png", answers: ["marth"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/pit.png", answers: ["pit"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/olimar.png", answers: ["olimar", "captain olimar"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/villager.png", answers: ["villager"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/wii-fit-trainer.png", answers: ["wii fit trainer", "wiifit trainer"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/little-mac.png", answers: ["little mac", "mac"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/shulk.png", answers: ["shulk"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/ryu.png", answers: ["ryu"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/cloud.png", answers: ["cloud", "cloud strife"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/bayonetta.png", answers: ["bayonetta"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/ridley.png", answers: ["ridley"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/king-k-rool.png", answers: ["king k rool", "k rool", "king k. rool"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/isabelle.png", answers: ["isabelle"], category: "character-images" },
+      // NJ Transit
+      { question: "During peak hours, where do most Northeast Corridor trains terminate in New York?", answers: ["new york penn station", "penn station"], category: "rush-hour-routing", agency: "nj-transit" },
+      { question: "What type of NJ Transit bus service runs express during rush hour?", answers: ["express", "express bus"], category: "rush-hour-routing", agency: "nj-transit" },
+
+      // Metra
+      { question: "What direction do most Metra trains run during AM rush hour?", answers: ["inbound", "into chicago"], category: "rush-hour-routing", agency: "metra" },
+      { question: "What type of Metra service skips certain stations during rush hour?", answers: ["express"], category: "rush-hour-routing", agency: "metra" },
+
+      // Metro-North
+      { question: "During rush hour, do Metro-North trains run more frequently?", answers: ["yes"], category: "rush-hour-routing", agency: "metro-north" },
+
+      // LIRR
+      { question: "What LIRR terminal do most rush hour trains use in Manhattan?", answers: ["penn station", "new york penn station"], category: "rush-hour-routing", agency: "lirr" },
+
+      // CTA
+      { question: "Which CTA lines run express during rush hour?", answers: ["red line", "purple line"], category: "rush-hour-routing", agency: "cta" },
     ],
+
     hard: [
-      { question: "Who is this character?", image: "/images/characters/roy.png", answers: ["roy"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/lucas.png", answers: ["lucas"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/ike.png", answers: ["ike"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/robin.png", answers: ["robin"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/corrin.png", answers: ["corrin"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/simon.png", answers: ["simon", "simon belmont"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/richter.png", answers: ["richter", "richter belmont"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/king-dedede.png", answers: ["king dedede", "dedede"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/meta-knight.png", answers: ["meta knight", "metaknight"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/palutena.png", answers: ["palutena"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/joker.png", answers: ["joker"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/hero.png", answers: ["hero"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/banjo-kazooie.png", answers: ["banjo and kazooie", "banjo & kazooie", "banjo kazooie"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/terry.png", answers: ["terry", "terry bogard"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/byleth.png", answers: ["byleth"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/min-min.png", answers: ["min min", "minmin"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/steve.png", answers: ["steve"], category: "character-images" },
-      { question: "Who is this character?", image: "/images/characters/sephiroth.png", answers: ["sephiroth"], category: "character-images" },
+      // NJ Transit
+      { question: "What routing do some NJ Transit Morris & Essex trains use during rush hour to avoid Hoboken?", answers: ["direct to new york penn", "midtown direct"], category: "rush-hour-routing", agency: "nj-transit" },
+      { question: "During rush hour, which NJ Transit bus routes run express to Port Authority?", answers: ["166", "route 166"], category: "rush-hour-routing", agency: "nj-transit" },
+
+      // MTA NYC
+      { question: "During rush hour, which tracks does the 6 express use?", answers: ["express tracks"], category: "rush-hour-routing", agency: "mta-nyc" },
+      { question: "What service pattern does the 7 train use during rush hour?", answers: ["express"], category: "rush-hour-routing", agency: "mta-nyc" },
+
+      // Metra
+      { question: "What is the fastest Metra express service on the BNSF line called?", answers: ["race track"], category: "rush-hour-routing", agency: "metra" },
+      { question: "During rush hour, which Metra line offers the most express trains?", answers: ["bnsf", "bnsf railway"], category: "rush-hour-routing", agency: "metra" },
+
+      // CTA
+      { question: "During rush hour, where does the Purple Line express terminate?", answers: ["loop", "the loop"], category: "rush-hour-routing", agency: "cta" },
+      { question: "What stations does the Red Line skip during rush hour express service?", answers: ["local stations"], category: "rush-hour-routing", agency: "cta" },
+
+      // Metro-North
+      { question: "What is Metro-North's express service that skips many stations called?", answers: ["super express"], category: "rush-hour-routing", agency: "metro-north" },
+
+      // SEPTA
+      { question: "During rush hour, which SEPTA Regional Rail lines offer the most frequent service?", answers: ["paoli thorndale"], category: "rush-hour-routing", agency: "septa" },
     ]
   },
-  'stage-images': {
+
+  'stations-stops': {
     easy: [
-      { question: "What stage is this?", image: "/images/stages/battlefield.png", answers: ["battlefield"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/final-destination.png", answers: ["final destination", "fd"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/peachs-castle.png", answers: ["peach's castle", "peachs castle", "peach castle"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/hyrule-castle.png", answers: ["hyrule castle"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/kongo-jungle.png", answers: ["kongo jungle"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/pokemon-stadium.png", answers: ["pokemon stadium"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/green-hill-zone.png", answers: ["green hill zone", "green hill"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/delfino-plaza.png", answers: ["delfino plaza"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/yoshis-island.png", answers: ["yoshi's island", "yoshis island", "yoshi island"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/new-donk-city.png", answers: ["new donk city hall", "new donk city"], category: "stage-images" },
+      // NYC
+      { question: "What is the busiest station in the NYC Subway system?", answers: ["times square 42nd street", "times square"], category: "stations-stops", agency: "mta-nyc" },
+      { question: "What major NYC transportation hub is shared by Amtrak, NJ Transit, and LIRR?", answers: ["penn station", "new york penn station", "pennsylvania station"], category: "stations-stops", agency: "mta-nyc" },
+      { question: "What is the main commuter rail terminal in Midtown Manhattan for Metro-North?", answers: ["grand central terminal", "grand central"], category: "stations-stops", agency: "metro-north" },
+
+      // NJ Transit
+      { question: "What is NJ Transit's main terminal in Newark?", answers: ["newark penn station", "newark penn"], category: "stations-stops", agency: "nj-transit" },
+      { question: "What is the main NJ Transit terminal in Hoboken called?", answers: ["hoboken terminal"], category: "stations-stops", agency: "nj-transit" },
+
+      // BART
+      { question: "What BART station serves San Francisco International Airport?", answers: ["sfo", "san francisco international airport"], category: "stations-stops", agency: "bart" },
+      { question: "What is BART's downtown San Francisco transfer station?", answers: ["embarcadero"], category: "stations-stops", agency: "bart" },
+
+      // WMATA
+      { question: "What Metro station serves Washington Dulles Airport?", answers: ["dulles airport", "washington dulles"], category: "stations-stops", agency: "wmata" },
+      { question: "What is WMATA's busiest station?", answers: ["metro center"], category: "stations-stops", agency: "wmata" },
+
+      // CTA
+      { question: "What is the CTA's main Loop transfer station?", answers: ["state/lake"], category: "stations-stops", agency: "cta" },
+      { question: "What CTA station serves O'Hare Airport?", answers: ["o'hare", "ohare"], category: "stations-stops", agency: "cta" },
+
+      // TTC
+      { question: "What is TTC's busiest subway station?", answers: ["bloor-yonge"], category: "stations-stops", agency: "ttc" },
+      { question: "What TTC station serves Billy Bishop Airport?", answers: ["union station"], category: "stations-stops", agency: "ttc" },
+
+      // SEPTA
+      { question: "What is SEPTA's main downtown Philadelphia transfer station?", answers: ["city hall"], category: "stations-stops", agency: "septa" },
+      { question: "What station is the main hub for SEPTA Regional Rail?", answers: ["30th street station"], category: "stations-stops", agency: "septa" },
     ],
+
     medium: [
-      { question: "What stage is this?", image: "/images/stages/onett.png", answers: ["onett"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/mute-city.png", answers: ["mute city"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/corneria.png", answers: ["corneria"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/brinstar.png", answers: ["brinstar"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/fountain-of-dreams.png", answers: ["fountain of dreams"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/skyworld.png", answers: ["skyworld"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/warioware.png", answers: ["warioware inc", "warioware"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/norfair.png", answers: ["norfair"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/castle-siege.png", answers: ["castle siege"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/skyloft.png", answers: ["skyloft"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/boxing-ring.png", answers: ["boxing ring"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/gaur-plain.png", answers: ["gaur plain"], category: "stage-images" },
+      // NJ Transit
+      { question: "What is the primary transfer station for NJ Transit in New Brunswick?", answers: ["new brunswick"], category: "stations-stops", agency: "nj-transit" },
+      { question: "What major NJ Transit hub serves transfers between multiple lines?", answers: ["secaucus junction"], category: "stations-stops", agency: "nj-transit" },
+
+      // MTA NYC
+      { question: "What station is the transfer point between the 4, 5, 6 and 7 trains?", answers: ["grand central 42nd street"], category: "stations-stops", agency: "mta-nyc" },
+      { question: "What is the southern terminal of the 1 train?", answers: ["south ferry"], category: "stations-stops", agency: "mta-nyc" },
+      { question: "Which station serves as a transfer between LIRR and the subway at Jamaica?", answers: ["jamaica center"], category: "stations-stops", agency: "mta-nyc" },
+
+      // BART
+      { question: "What station is the main transfer point between BART and Caltrain?", answers: ["millbrae"], category: "stations-stops", agency: "bart" },
+      { question: "What is BART's easternmost station?", answers: ["antioch", "berryessa"], category: "stations-stops", agency: "bart" },
+
+      // WMATA
+      { question: "What station connects all WMATA lines except Red?", answers: ["lenfant plaza"], category: "stations-stops", agency: "wmata" },
+      { question: "What is the northern terminus of the Red Line?", answers: ["shady grove"], category: "stations-stops", agency: "wmata" },
+
+      // LA Metro
+      { question: "What station is the main downtown LA Metro transfer hub?", answers: ["7th street metro center"], category: "stations-stops", agency: "la-metro" },
+      { question: "What is the western terminus of the E Line?", answers: ["downtown santa monica"], category: "stations-stops", agency: "la-metro" },
+
+      // TTC
+      { question: "What is the northern terminus of Line 1?", answers: ["vaughan metropolitan centre"], category: "stations-stops", agency: "ttc" },
+      { question: "What station connects Line 1 and Line 2?", answers: ["bloor-yonge", "st george"], category: "stations-stops", agency: "ttc" },
+
+      // Translink
+      { question: "What is the main SkyTrain transfer station in downtown Vancouver?", answers: ["waterfront"], category: "stations-stops", agency: "translink" },
+
+      // Metra
+      { question: "What is the main Metra terminal in downtown Chicago?", answers: ["union station"], category: "stations-stops", agency: "metra" },
     ],
+
     hard: [
-      { question: "What stage is this?", image: "/images/stages/suzaku-castle.png", answers: ["suzaku castle"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/midgar.png", answers: ["midgar"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/umbra-clock-tower.png", answers: ["umbra clock tower"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/great-plateau-tower.png", answers: ["great plateau tower"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/new-pork-city.png", answers: ["new pork city"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/palutenas-temple.png", answers: ["palutena's temple", "palutenas temple"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/draculas-castle.png", answers: ["dracula's castle", "draculas castle", "dracula castle"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/mementos.png", answers: ["mementos"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/spiral-mountain.png", answers: ["spiral mountain"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/kof-stadium.png", answers: ["king of fighters stadium", "kof stadium"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/garreg-mach.png", answers: ["garreg mach monastery", "garreg mach"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/spring-stadium.png", answers: ["spring stadium"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/minecraft-world.png", answers: ["minecraft world"], category: "stage-images" },
-      { question: "What stage is this?", image: "/images/stages/northern-cave.png", answers: ["northern cave"], category: "stage-images" },
+      // Amtrak
+      { question: "What is Amtrak's busiest station by ridership?", answers: ["new york penn station", "penn station"], category: "stations-stops", agency: "amtrak" },
+      { question: "What major Amtrak hub is located in Washington DC?", answers: ["union station"], category: "stations-stops", agency: "amtrak" },
+
+      // NJ Transit
+      { question: "What is the westernmost station on the Raritan Valley Line?", answers: ["high bridge"], category: "stations-stops", agency: "nj-transit" },
+
+      // MTA NYC
+      { question: "What is the deepest subway station in NYC?", answers: ["191st street"], category: "stations-stops", agency: "mta-nyc" },
+      { question: "Which station was renamed from 'Sixth Avenue' to honor a civil rights leader?", answers: ["martin luther king jr boulevard"], category: "stations-stops", agency: "mta-nyc" },
+
+      // SEPTA
+      { question: "What is the northern terminus of the Broad Street Line?", answers: ["fern rock"], category: "stations-stops", agency: "septa" },
+      { question: "What station serves as the connection between SEPTA and PATCO?", answers: ["8th and market"], category: "stations-stops", agency: "septa" },
+
+      // WMATA
+      { question: "What is the deepest Metro station in the WMATA system?", answers: ["forest glen"], category: "stations-stops", agency: "wmata" },
+
+      // CTA
+      { question: "What is the oldest surviving 'L' station in Chicago?", answers: ["quincy"], category: "stations-stops", agency: "cta" },
+
+      // Metra
+      { question: "What is the southernmost station on the Metra Electric Line?", answers: ["university park"], category: "stations-stops", agency: "metra" },
+
+      // MUNI
+      { question: "What is the main MUNI Metro transfer station?", answers: ["embarcadero"], category: "stations-stops", agency: "muni" },
+    ]
+  },
+
+  'line-identification': {
+    easy: [
+      // BART
+      { question: "What color is the BART line to SFO?", answers: ["yellow"], category: "line-identification", agency: "bart" },
+      { question: "What color is the BART line from Richmond to Berryessa?", answers: ["orange"], category: "line-identification", agency: "bart" },
+
+      // WMATA
+      { question: "What color is WMATA's line to Dulles Airport?", answers: ["silver"], category: "line-identification", agency: "wmata" },
+      { question: "What is the oldest WMATA Metro line color?", answers: ["red"], category: "line-identification", agency: "wmata" },
+
+      // CTA
+      { question: "What CTA line runs to O'Hare Airport?", answers: ["blue line"], category: "line-identification", agency: "cta" },
+      { question: "What color is the CTA's north-south elevated line?", answers: ["red"], category: "line-identification", agency: "cta" },
+      { question: "What CTA line serves Midway Airport?", answers: ["orange line"], category: "line-identification", agency: "cta" },
+
+      // TTC
+      { question: "What is Toronto's east-west subway line number?", answers: ["line 2", "2"], category: "line-identification", agency: "ttc" },
+      { question: "What color is TTC Line 1?", answers: ["yellow"], category: "line-identification", agency: "ttc" },
+      { question: "What color is TTC Line 2?", answers: ["green"], category: "line-identification", agency: "ttc" },
+
+      // LA Metro
+      { question: "What color is the LA Metro line to Santa Monica?", answers: ["expo line", "e line"], category: "line-identification", agency: "la-metro" },
+      { question: "What is LA Metro's newest line to the airport called?", answers: ["k line", "crenshaw line"], category: "line-identification", agency: "la-metro" },
+
+      // MUNI
+      { question: "What is MUNI's historic waterfront streetcar line called?", answers: ["f line", "f market"], category: "line-identification", agency: "muni" },
+    ],
+
+    medium: [
+      // BART
+      { question: "What BART line runs from Daly City to Dublin?", answers: ["blue line"], category: "line-identification", agency: "bart" },
+      { question: "What color is the BART line to Antioch?", answers: ["yellow"], category: "line-identification", agency: "bart" },
+
+      // WMATA
+      { question: "What color is the WMATA line that only runs in Maryland?", answers: ["green line"], category: "line-identification", agency: "wmata" },
+      { question: "Which WMATA line shares the most track with another line?", answers: ["blue line", "orange line", "silver line"], category: "line-identification", agency: "wmata" },
+
+      // CTA
+      { question: "What CTA line runs to Skokie?", answers: ["yellow line"], category: "line-identification", agency: "cta" },
+      { question: "What is the CTA's circular downtown line called?", answers: ["loop"], category: "line-identification", agency: "cta" },
+
+      // TTC
+      { question: "What is TTC's Sheppard Subway line number?", answers: ["line 4", "4"], category: "line-identification", agency: "ttc" },
+      { question: "What number is the TTC Scarborough RT?", answers: ["line 3", "3"], category: "line-identification", agency: "ttc" },
+
+      // LA Metro
+      { question: "What letter designation is the LA Metro Red Line?", answers: ["b line"], category: "line-identification", agency: "la-metro" },
+      { question: "What is the LA Metro Purple Line's letter designation?", answers: ["d line"], category: "line-identification", agency: "la-metro" },
+
+      // Translink
+      { question: "What color is Vancouver's Canada Line?", answers: ["blue"], category: "line-identification", agency: "translink" },
+      { question: "What is Vancouver's original SkyTrain line called?", answers: ["expo line"], category: "line-identification", agency: "translink" },
+    ],
+
+    hard: [
+      // BART
+      { question: "What was the original name for BART's yellow line?", answers: ["pittsburgh/bay point line"], category: "line-identification", agency: "bart" },
+      { question: "How many total BART lines are there?", answers: ["6", "six"], category: "line-identification", agency: "bart" },
+
+      // WMATA
+      { question: "What WMATA line was extended to Dulles in 2022?", answers: ["silver line"], category: "line-identification", agency: "wmata" },
+      { question: "Which two WMATA lines run parallel for most of their route?", answers: ["blue and orange", "orange and blue"], category: "line-identification", agency: "wmata" },
+
+      // CTA
+      { question: "What was the CTA Pink Line called before 2006?", answers: ["blue line douglas branch"], category: "line-identification", agency: "cta" },
+      { question: "What CTA line has the fewest stations?", answers: ["yellow line"], category: "line-identification", agency: "cta" },
+
+      // TTC
+      { question: "What was TTC Line 1 called before renumbering?", answers: ["yonge-university-spadina"], category: "line-identification", agency: "ttc" },
+      { question: "What is the planned Line 5 in Toronto called?", answers: ["eglinton crosstown"], category: "line-identification", agency: "ttc" },
+
+      // LA Metro
+      { question: "What was the LA Metro Gold Line renamed to?", answers: ["l line"], category: "line-identification", agency: "la-metro" },
+      { question: "How many rail lines does LA Metro operate?", answers: ["6", "six"], category: "line-identification", agency: "la-metro" },
+
+      // MUNI
+      { question: "What MUNI Metro line runs to the San Francisco Zoo?", answers: ["l taraval"], category: "line-identification", agency: "muni" },
     ]
   }
 };

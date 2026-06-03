@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Super Smash Bros. Quiz</title>
+  <title>Transit Systems Quiz</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <div class="container">
     <!-- Start Screen -->
     <div id="start-screen" class="screen active">
-      <h1>Super Smash Bros. Quiz</h1>
-      <p class="subtitle">Test your knowledge of characters, stages, and songs from Smash 4 and Ultimate!</p>
+      <h1>Transit Systems Quiz</h1>
+      <p class="subtitle">Test your knowledge of vehicles, routes, and stations across North America's transit systems!</p>
 
       <div class="settings">
         <div class="setting-group">
@@ -27,24 +27,28 @@
           <h2>Select Categories</h2>
           <div class="category-checkboxes">
             <label class="checkbox-label">
-              <input type="checkbox" name="category" value="characters">
-              <span>Characters (Text)</span>
+              <input type="checkbox" name="category" value="vehicle-models-text">
+              <span>Vehicle Models (Text)</span>
             </label>
             <label class="checkbox-label">
-              <input type="checkbox" name="category" value="stages">
-              <span>Stages (Text)</span>
+              <input type="checkbox" name="category" value="vehicle-models-images" checked>
+              <span>Vehicle Models (Images)</span>
             </label>
             <label class="checkbox-label">
-              <input type="checkbox" name="category" value="songs">
-              <span>Songs (Text)</span>
+              <input type="checkbox" name="category" value="routes" checked>
+              <span>Routes & Destinations</span>
             </label>
             <label class="checkbox-label">
-              <input type="checkbox" name="category" value="character-images" checked>
-              <span>Characters (Images)</span>
+              <input type="checkbox" name="category" value="rush-hour-routing">
+              <span>Rush Hour Routing</span>
             </label>
             <label class="checkbox-label">
-              <input type="checkbox" name="category" value="stage-images" checked>
-              <span>Stages (Images)</span>
+              <input type="checkbox" name="category" value="stations-stops" checked>
+              <span>Stations & Stops</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="category" value="line-identification">
+              <span>Line Identification</span>
             </label>
           </div>
         </div>
